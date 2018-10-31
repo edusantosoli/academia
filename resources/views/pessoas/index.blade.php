@@ -16,21 +16,51 @@
 </head>
 <body>
 <div class="container">
-    <h2>Lista de Pessoas</h2><br/>
+    <h2>Relatório de Cadastro</h2><br/>
     <table class="table table-striped">
         <thead>
         <tr>
+            <th>#</th>
             <th>ID</th>
-            <th>Razao Social</th>
-            <th>Nome Fantasia</th>
+            <th>Tipo</th>
+            <th>CNPJ / CPF</th>
+            <th>Nome</th>
+            <th>Nome Fanstasia</th>
+            <th>Endereço</th>
+            <th>Numero</th>
+            <th>Complemento</th>
+            <th>Bairro</th>
+            <th>Cep </th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <th>Telefone Comercial</th>
+            <th>Celular</th>
+            <th>Email</th>
+            <th>Contato</th>
+            <th>Dpto</th>
         </tr>
         </thead>
         <tbody>
         @foreach($pessoas as $post)
             <tr>
+                <td> <a href="/alunos/editar/{{$post['id']}}">Editar</a> </td>
                 <td>{{$post['id']}}</td>
-                <td>{{$post['cadRazaoSocial']}}</td>
-                <td>{{$post['cadRazaoSocial']}}</td>
+                <td>{{$post['cadTpPessoa']}}</td>
+                <td>{{$post['documento']}}</td>
+                <td>{{$post['cadRazaoSocial']}} </td>
+                <td>{{$post['cadNomeFantasia']}}</td>
+                <td>{{$post['cadEndereco']}}</td>
+                <td>{{$post['cadNumero']}}</td>
+                <td>{{$post['cadComplemento']}}</td>
+                <td>{{$post['cadBairro']}}</td>
+                <td>{{$post['cadCep']}}</td>
+                <td>{{$post['cadCidade']}}</td>
+                <td>{{$post['cadUf']}}</td>
+                <td>{{$post['cadTelefone']}}</td>
+                <td>{{$post['cadCelular']}}</td>
+                <td>{{$post['cadEmail']}}</td>
+                <td>{{$post['cadContato']}}</td>
+                <td>{{$post['cadDepto']}}</td>
             </tr>
         @endforeach
         </tbody>
