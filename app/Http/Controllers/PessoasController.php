@@ -69,5 +69,10 @@ class PessoasController extends Controller
 
     }
 
-    //
+    /**
+     *
+     */
+    public function edit ()
+    {
+    }
 }

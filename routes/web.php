@@ -88,5 +88,5 @@ Route::get('/repetir/nome/{nome}/{n}', function ($nome, $n) {
 Route::get('/alunos', 'PessoasController@Index');
 Route::get('/alunos/cadastrar', 'PessoasController@create');
 Route::post('/alunos/cadastrar', 'PessoasController@store');
-Route::post('/alunos/editar', 'PessoasController@edit');
+Route::get('/alunos/editar', 'PessoasController@edit');
 
