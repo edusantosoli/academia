@@ -25,11 +25,30 @@ class PessoasController extends Controller
      */
     public function store (Request $request)
     {
+
         var_dump($request->get('razao'));
+
         $pessoa = new \App\CadPessoas();
         $pessoa->documento = $request->get('documento');
         $pessoa->cadRazaoSocial = $request->get('razao');
-        $pessoa->cadRazaoSocial = $request->get('razao');
+
+        if ($request->get('fantasia'))
+            $pessoa->cadNomeFantasia = $request->get('fantasia');
+
+        $pessoa->cadEndereco = $request->get('endereco');
+        $pessoa->cadNumero = $request->get('numero');
+        $pessoa->cadBairro = $request->get('bairro');
+        $pessoa->cadCidade = $request->get('cidade');
+        $pessoa->cadComplemento = $request->get('complemento');
+        $pessoa->cadCep = $request->get('cep');
+        $pessoa->cadTelefone = $request->get('telefone');
+        $pessoa->cadCelular = $request->get('celular');
+        $pessoa->cadUf = $request->get('uf');
+        $pessoa->cadEmail = $request->get('email');
+        $pessoa->cadTpPessoa = $request->get('tppessoa');
+        $pessoa->cadContato = $request->get('contato');
+        $pessoa->cadDepto = $request->get('dpto');
+
         $pessoa->save();
 
 

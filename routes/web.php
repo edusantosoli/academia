@@ -46,7 +46,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/aluno', function () {
+Route::get('/alunos/cadastrar', function () {
     return "<h1>tela de cadastro do aluno</h1>";
 });
 

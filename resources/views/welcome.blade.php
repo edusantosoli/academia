@@ -87,7 +87,7 @@
                     <a href="https://laracasts.com">Nossa Missão</a>
                     <a href="https://laravel-news.com">Novidades</a>
                     <a href="https://nova.laravel.com">Sistema</a>
-                    <a href="https://forge.laravel.com">Cadastro</a>
+                    <a href="{{ url('/alunos/cadastrar') }}">Cadastro</a></a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>

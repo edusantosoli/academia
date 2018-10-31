@@ -28,11 +28,7 @@
         </div>
         <div class="row">
              <div class="form-group col-md-6">
-                <label for="Name">CNPJ</label>
-                <input type="text" class="form-control" name="documento">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="Name">CPF</label>
+                <label for="Name">CNPJ / CPF</label>
                 <input type="text" class="form-control" name="documento">
             </div>
         </div>
@@ -46,43 +42,59 @@
                     <input type="text" class="form-control" name="fantasia">
                 </div>
         </div>
-
             <div class="row">
                 <div class="form-group col-md-3">
                     <label for="Name">Endereco</label>
-                    <input type="text" class="form-control" name="razao">
+                    <input type="text" class="form-control" name="endereco">
                 </div>
                 <div class="form-group col-md-3">
                     <label for="Name">Numero</label>
-                    <input type="text" class="form-control" name="fantasia">
+                    <input type="text" class="form-control" name="numero">
                 </div>
 
                    <div class="form-group col-md-3">
                         <label for="Name">Complemento</label>
-                        <input type="text" class="form-control" name="documento">
+                        <input type="text" class="form-control" name="complemento">
                     </div>
                     <div class="form-group col-md-3">
                         <label for="Name">Bairro</label>
-                        <input type="text" class="form-control" name="documento">
+                        <input type="text" class="form-control" name="bairro">
                     </div>
                 </div>
         <div class="row">
             <div class="form-group col-md-3">
                 <label for="Name">Cep</label>
-                <input type="text" class="form-control" name="razao">
+                <input type="text" class="form-control" name="cep">
             </div>
             <div class="form-group col-md-3">
                 <label for="Name">Cidade</label>
-                <input type="text" class="form-control" name="fantasia">
+                <input type="text" class="form-control" name="cidade">
             </div>
-
             <div class="form-group col-md-3">
                 <label for="Name">Estado</label>
-                <input type="text" class="form-control" name="documento">
+                <input type="text" class="form-control" name="estado">
             </div>
             <div class="form-group col-md-3">
                 <label for="Name">Email</label>
-                <input type="text" class="form-control" name="documento">
+                <input type="text" class="form-control" name="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label for="Name">Telefone Comercial</label>
+                <input type="text" class="form-control" name="telefone">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="Name">Tel Celular</label>
+                <input type="text" class="form-control" name="comercial">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="Name">Contato</label>
+                <input type="text" class="form-control" name="contato">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="Name">Depto</label>
+                <input type="text" class="form-control" name="dpto">
             </div>
         </div>
         <div class="row">
