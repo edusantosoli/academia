@@ -15,10 +15,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
 </head>
 <body>
+@if(\Session::has('success'))
+    <div class="alert alert-success">
+        {{\Session::get('success')}}
+    </div>
+@endif
 <div class="container">
     <h2>Relatório de Cadastro</h2><br/>
     <table class="table table-striped">
         <thead>
+        <a href="/alunos/cadastrar"> Cadastrar</a>
         <tr>
             <th>#</th>
             <th>ID</th>

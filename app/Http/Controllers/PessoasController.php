@@ -63,16 +63,42 @@ class PessoasController extends Controller
         $pessoa->cadDepto = $request->get('dpto');
 
         $pessoa->save();
-
-
-        die;
-
+        return redirect()->route('pessoas.index')->with('success', ' Cadastrado com suscesso!');
     }
 
     /**
-     *
+     * @param $id
+     * @return mixed
      */
-    public function edit ()
+    public function edit($id)
     {
+        $pessoas = CadPessoas::find($id);
+
+        return view('pessoas.edit', ['pessoas' => $pessoas]);
+    }
+
+    public function update (Request $request,$id) {
+        $pessoa = CadPessoas::findOrFail($id);
+        $pessoa->documento = $request->get('documento');
+        $pessoa->cadRazaoSocial = $request->get('razao');
+        $pessoa->cadNomeFantasia = $request->get('fantasia');
+        $pessoa->cadEndereco = $request->get('endereco');
+        $pessoa->cadNumero = $request->get('numero');
+        $pessoa->cadBairro = $request->get('bairro');
+        $pessoa->cadCidade = $request->get('cidade');
+        $pessoa->cadComplemento = $request->get('complemento');
+        $pessoa->cadCep = $request->get('cep');
+        $pessoa->cadTelefone = $request->get('telefone');
+        $pessoa->cadCelular = $request->get('celular');
+        $pessoa->cadUf = $request->get('estado');
+        $pessoa->cadEmail = $request->get('email');
+        $pessoa->cadTpPessoa = $request->get('tppessoa');
+        $pessoa->cadContato = $request->get('contato');
+        $pessoa->cadDepto = $request->get('dpto');
+
+        $pessoa->save();
+        return redirect()->route('pessoas.index')->with('success', ' Editado com suscesso!');
+
+
     }
 }
